@@ -20,10 +20,10 @@
 
 <script>
   function conferirSenha() {
-    var senhaDefinida = "123"; // Escreva aqui a senha que você quer
+    var senhaspermitidas=["123","samuel","estudar","informatica"];//escreva aqui a senha que você que
     var senhaDigitada = document.getElementById("campo-senha").value;
 
-    if (senhaDigitada === senhaDefinida) {
+    if (senhaspermitidas.includes(senhaDigitada)) {
       // Se a senha estiver certa, esconde a tela de bloqueio e mostra o site
       document.getElementById("bloqueio-tela").style.display = "none";
     } else {
